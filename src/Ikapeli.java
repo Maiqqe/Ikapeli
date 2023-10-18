@@ -1,4 +1,4 @@
-
+	import java.util.Scanner;
 public class Ikapeli {
 
 
@@ -12,6 +12,25 @@ Tehtävä 5: Tarkenna eläkeasioita siten, että yli 58-vuotiaille kerro, että 
 Tehtävä 6: Toivota 65-vuotiaille hyviä eläkepäiviä.
 
 Tehtävä 7: 40–50 -vuotiaille toivota parasta keski-ikää.*/
+Scanner in = new Scanner(System.in);
+		
+		int ika = 0;
+		
+		System.out.println("Kirjoita ikäsi numeroina");
+		ika = in.nextInt();
+
+
+		if (ika > 0 && ika < 18) //Alaikäiset
+			{
+				if (ika > 0 && ika <15)
+				{System.out.println("Olet alaikäinen.");}
+				
+				if (ika == 15) //alaikäiset mopoilijat
+				{ System.out.println("Saat ajaa mopoa."); }
+				
+				if (ika >= 16)  //Tehtävä 1: alaikäiset mopoilijat ja kevarikuskit 
+				{System.out.println("Saat ajaa kevaria."); }
+			}
 	}
 
 }

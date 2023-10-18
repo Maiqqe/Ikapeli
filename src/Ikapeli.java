@@ -49,6 +49,24 @@ Scanner in = new Scanner(System.in);
 	        else 
 	        	{System.out.println("Olet aikuinen");}
 	    } 
+		
+	    else if (ika >= 65) //Eläkeläiset
+	    {
+	        if (ika == 65) 
+	        { System.out.println("Hyviä eläkepäiviä!");}
+
+	        
+	        else if (ika == 100) //Tehtävä 4:
+	        {System.out.println("Onnittelut 100-vuotiaalle!");
+	         System.out.println("Onnea!");
+	         System.out.println("Onnea!");}
+	        
+	        else if (ika % 10 == 0) //Tehtävä 3:
+        	{System.out.println("Onnittelut tasavuosikymmenestä!");}
+	        
+	        else {System.out.println("Olet eläkeläinen");}
+	        
+	    } 
 	}
 
 }

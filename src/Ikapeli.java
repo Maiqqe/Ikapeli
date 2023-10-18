@@ -67,6 +67,9 @@ Scanner in = new Scanner(System.in);
 	        else {System.out.println("Olet eläkeläinen");}
 	        
 	    } 
+	    
+	    else 
+	    {System.out.println("Error");}
 	}
 
 }

@@ -31,6 +31,24 @@ Scanner in = new Scanner(System.in);
 				if (ika >= 16)  //Tehtävä 1: alaikäiset mopoilijat ja kevarikuskit 
 				{System.out.println("Saat ajaa kevaria."); }
 			}
+		
+	    else if (ika >= 18 && ika < 65) //Aikuiset
+	    {
+	        if (ika == 18) //Tehtävä 2:
+	        	{System.out.println("Olet juuri tullut täysi-ikäiseksi ja saat ajaa autoa.");} 
+	        
+	        else if (ika % 10 == 0) //Tehtävä 3:
+	        	{System.out.println("Onnittelut tasavuosikymmenestä!");}
+	        
+	        else if (ika >= 40 && ika < 50) 
+	        	{System.out.println("Toivotan parasta keski-ikää!");} 
+	        
+	        else if (ika > 58) //Tehtävä 5:
+	        {System.out.println("Voit mennä varhaiseläkkeelle.");}
+	        
+	        else 
+	        	{System.out.println("Olet aikuinen");}
+	    } 
 	}
 
 }
